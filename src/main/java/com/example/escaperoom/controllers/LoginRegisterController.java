@@ -6,6 +6,8 @@ import com.example.escaperoom.security.AuthRequest;
 import com.example.escaperoom.security.JwtResponse;
 import com.example.escaperoom.security.JwtUtil;
 import com.example.escaperoom.security.MyUserDetailsService;
+import com.example.escaperoom.security.refreshtoken.RefreshToken;
+import com.example.escaperoom.services.RefreshTokenService;
 import com.example.escaperoom.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,6 +37,9 @@ public class LoginRegisterController {
 
     @Autowired
     private MyUserDetailsService myUserDetailsService;
+
+    @Autowired
+    private RefreshTokenService refreshTokenService;
 
     @Autowired
     private JwtUtil jwtTokenUtil;
@@ -70,8 +75,8 @@ public class LoginRegisterController {
         System.out.println("lista de authorities userdetails:" + userDetails.getAuthorities());
         System.out.println(roles);
 
-//        RefreshToken refreshToken = refreshTokenService.createRefreshToken(userDetails.getUsername());
-//        System.out.println(refreshToken.toString());
+        RefreshToken refreshToken = refreshTokenService.createRefreshToken(userDetails.getUsername());
+        System.out.println(refreshToken.toString());
 
         return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), roles));
     }

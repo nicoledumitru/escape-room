@@ -97,21 +97,21 @@ public class UserController {
         }
     }
 
-    @GetMapping("/current")
-    public ResponseEntity getCurrentUser(@RequestHeader("Authorization") String auth) {
-        try {
-            String jwtToken = auth.substring(7);
-            String username = jwtUtil.extractUsername(jwtToken);
-            Optional<User> userByEmail = userService.getUserByUsername(username);
-            if(userByEmail.isPresent()){
-                userByEmail.get().setPassword(null);
-                return ResponseEntity.ok(userByEmail);
-            } else{
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("ERROR: Invalid USER from JWT");
-            }
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("ERROR: Couldn't parse current user jwt to get user");
-        }
-    }
+//    @GetMapping("/current")
+//    public ResponseEntity getCurrentUser(@RequestHeader("Authorization") String auth) {
+//        try {
+//            String jwtToken = auth.substring(7);
+//            String username = jwtUtil.extractUsername(jwtToken);
+//            Optional<User> userByEmail = userService.getUserByUsername(username);
+//            if(userByEmail.isPresent()){
+//                userByEmail.get().setPassword(null);
+//                return ResponseEntity.ok(userByEmail);
+//            } else{
+//                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("ERROR: Invalid USER from JWT");
+//            }
+//        } catch (Exception e) {
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("ERROR: Couldn't parse current user jwt to get user");
+//        }
+//    }
 
 }
