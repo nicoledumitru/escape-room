@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    position: relative;
+    color: #e9ecef;
+    overflow-x: hidden;
+    background-image: url('/assets/images/bg.jpg');
+  }
+
+  .tm-bg-black-transparent {
+    background-color: rgba(15, 29, 32, 0.76);
+    color: white;
+  }
+
+  .tm-contact-form {
+    height: 100%;
+    padding: 67px 115px 67px 70px;
+    margin-right: 5px;
+  }
+  
+  .tm-contact-text {
+    padding: 58px 95px 100px 80px;
+    margin-left: 5px;
+  }
+  
+  .tm-contact-col-left {
+    margin-bottom: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 50px;
+  }
+  
+  .form-control {
+    background-color: transparent;
+    color: white;
+    padding: 25px 20px;
+  }
+  
+  .form-control:focus {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  .form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+  }
+  
+  .tm-contact-row {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  .btn {
+    border-radius: 0;
+    padding: 8px 40px;
+    font-size: 1.3rem;
+  }
+  
+  .btn-primary {
+    background-color: white;
+    border: 0;
+    border-radius: 15px;
+    color: #3e3f40;
+  }
+  .btn-primary2 {
+    background-color: rgba(139, 0, 0, 0.8);
+    border: 0;
+    border-radius: 15px;
+    height: auto;
+    color: #cfcfcf;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #495057;
+    outline: none;
+    border: none;
+  }

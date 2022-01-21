@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+  position: relative;
+  color: #e9ecef;
+  overflow-x: hidden;
+  background-image: url('/assets/images/bg.jpg');
+}
+
+.tm-services-parallax-header {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 22px;
+  }
+  
+  .tm-services-header {
+    position: relative;
+    z-index: 102;
+    width: 100%;
+    padding: 85px 15px 37px 15px;
+  }
+  
+  .tm-services-page-title {
+    font-size: 2.8rem;
+    padding-bottom: 37px;
+  }
+  
+  .tm-services-detail-box {
+    padding: 80px 70px;
+    margin-top: 22px;
+    margin-bottom: 41px;
+  }
+  
+  #tmServices .tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tm-tabs-container {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 135px;
+  }
+  
+  .tm-tab-links {
+    margin-right: 40px;
+    width: 380px;
+  }
+  
+  .tm-tab-contents {
+    width: calc(100% - 420px);
+  }
+  
+  #tmServices .tabs li {
+    margin-bottom: 36px;
+  }
+  
+  #tmServices .tabs li:last-child {
+    margin-bottom: 0;
+  }
+  
+  #tmServices .tabs a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: rgba(15, 29, 32, 0.77);
+    border: 1px solid rgba(15, 29, 32, 0.77);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    transition: all 0.3s;
+  }
+  
+  #tmServices .tabs .icon-wrap {
+    width: 75px;
+    height: 75px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  
+  #tmServices .tabs .active,
+  #tmServices .tabs a:hover {
+    border-color: white;
+    color: #fff !important;
+  }
+  
+  #first-tab-group > div {
+    background-color: rgba(15, 29, 32, 0.77);
+    color: white;
+    padding: 45px 60px;
+    min-height: 423px;
+  }
+  
+  .tm-service-tab-title,
+  .tm-service-tab-p {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    border-radius: 0;
+    padding: 8px 40px;
+    font-size: 1.3rem;
+  }
+  
+  .btn-primary {
+    background-color: white;
+    border: 0;
+    border-radius: 15px;
+    color: #3e3f40;
+  }
+  .btn-primary2 {
+    background-color: rgba(139, 0, 0, 0.8);
+    border: 0;
+    border-radius: 15px;
+    height: auto;
+    color: #cfcfcf;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #495057;
+    outline: none;
+    border: none;
+  }

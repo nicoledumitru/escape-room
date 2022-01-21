@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    position: relative;
+    color: #e9ecef;
+    overflow-x: hidden;
+    background-image: url('/assets/images/bg.jpg');
+  }
+
+  .tm-testimonials-section {
+    padding-top: 45px;
+    padding-bottom: 90px;
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+  
+  .tm-testimonials-header {
+    padding: 55px 15px 50px;
+  }
+  
+  .tm-testimonials-page-title {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  
+  .tm-testimonials-parallax-header {
+    min-height: 400px;
+    margin-bottom: 45px;
+  }
+  
+  .tm-person-img-container {
+    margin-bottom: 63px;
+  }
+  
+  .tm-testimonial-box {
+    padding: 60px 30px 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .slick-dots {
+    bottom: -88px;
+  }
+  
+  .slick-dots li,
+  .slick-dots li button {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .slick-dots li {
+    margin: 8px;
+  }
+  
+  .slick-dots li button {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.6em;
+    font-weight: 900;
+  }
+  
+  .slick-dots li button:before {
+    font-family: inherit;
+    font-size: inherit;
+    content: "\f45c";
+    opacity: 0.5;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    opacity: 0.85;
+  }
+  
+  #tmCallToAction.tm-testimonials-cta {
+    padding-bottom: 185px;
+  }

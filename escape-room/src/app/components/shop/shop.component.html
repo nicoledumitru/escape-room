@@ -1,0 +1,129 @@
+<body id="servicesPage">
+<div class="container-fluid">
+<app-navbar></app-navbar>
+<section class="row" id="tmServices">
+
+    <div class="col-12 tm-tabs-container">
+        <div class="tm-tab-links">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li (click)="bgActive()" id="bgButton"><a href="#tab1" class="active">
+                    <div class="icon-wrap"><i ></i>
+                        <img  src="assets/images/board-game.png" width="50" height="50"  />
+
+                    </div>
+                    Board Games
+                </a></li>
+                <li (click)="mActive()" id="mButton"><a href="#tab2" class="">
+                    <div class="icon-wrap"><i ></i>
+                        <img src="assets/images/clothes.png" width="70" height="70"  />
+                    </div>
+                    Merch
+                </a></li>
+                <li (click)="vActive()" id="vButton"><a href="#tab3" class="">
+                    <div class="icon-wrap"><i ></i>
+                        <img src="assets/images/voucher.png" width="60" height="60"  />
+                    </div>
+                    Vouchers
+                </a></li>
+            </ul>
+            <a class="btn btn-primary" style="margin-top:50px; position:absolute; width:25%" (click)="showCart()">Go to cart</a>
+        </div>
+        <div class="tm-tab-contents">
+            <div id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                    <div class="text-content">
+                        <h3 class="tm-service-tab-title">Board Games</h3>
+                        <!-- <p class="tm-service-tab-p">You cand find board games for each of our rooms plus new and unsolved rooms.
+                        </p> -->
+                        <div>
+                            <img src="assets/images/b1.png" width="110" height="110" hspace="50" />
+
+                            <img src="assets/images/b2.png" width="100" height="100" hspace="50">
+
+                            <img src="assets/images/b3.png" width="100" height="100 "hspace="50">
+                        </div>
+                        <div>
+                            <a  routerLink="/shop" class="btn btn-primary2" style="margin:35px;">Order</a>
+                            <a  routerLink="/shop" class="btn btn-primary2" style="margin:35px;">Order</a>
+                            <a  routerLink="/shop" class="btn btn-primary2" style="margin:35px;">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab2">
+                    <div class="text-content">
+                        <h3 class="tm-service-tab-title">Merch</h3>
+                        <!-- <p class="tm-service-tab-p">Our merch includes: t-shirts,hoodies,coffe cups,masks.
+                        </p> -->
+                        <div>
+                            <p>
+                                <img src="assets/images/m1.png" width="120" height="120" hspace="50"/>
+
+                                <img src="assets/images/m2.png" width="120" height="120" hspace="50">
+
+                                <img src="assets/images/m3.png" width="120" height="120" hspace="50">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <strong style="margin-left: 80px;">{{ 13.6 | currency:'EUR' }}</strong>
+                                <strong style="margin-left: 160px;">{{ 13.6 | currency:'EUR' }}</strong>
+                                <strong style="margin-left: 180px;">{{ 13.6 | currency:'EUR' }}</strong>
+                            </p>
+                        </div>
+                        <div>
+
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:40px;">Order</a>
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:40px;">Order</a>
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:50px;">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab3">
+                    <div class="text-content">
+                        <h3 class="tm-service-tab-title">Vouchers</h3>
+                        <!-- <p class="tm-service-tab-p">We offer 3 different types of vouchers: 10$,30$ or 50$ off your next room appointment.
+                        </p> -->
+
+                        <div>
+                            <img src="assets/images/v1.png" width="100" height="100"  hspace="50"/>
+
+                            <img src="assets/images/v2.png" width="100" height="100" hspace="50">
+
+                            <img src="assets/images/v3.png" width="100" height="100" hspace="50">
+                        </div>
+                        <div>
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:35px;">Order</a>
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:35px;">Order</a>
+                            <a routerLink="/shop" class="btn btn-primary2"style="margin:35px;">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+</div>
+</body>
+
+<!-- product-item component
+ <div class="card mb-4 shadow-sm">
+  <img class="bd-placeholder-img card-img-top p-2" width="100%"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rubik%27s_cube_scrambled.svg/1200px-Rubik%27s_cube_scrambled.svg.png"
+  <div class="card-body">
+    <p class="card-text">
+      <strong>{{ 254 | currency:'INR' }}</strong>
+    </p>
+   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+     This content is a little bit longer.</p>
+    <div class="d-flex justify-content-between align-items-center">
+    <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-out line-primary product-btn">Add to Cart</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+      </div>
+    </div>
+  </div>
+ </div> -->

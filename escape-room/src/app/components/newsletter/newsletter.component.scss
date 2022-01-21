@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+  .tm-bg-black {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .tm-call-to-action-text {
+    padding: 50px 60px;
+    width: 600px;
+  }
+
+  
+  .tm-call-to-action-title {
+    margin-bottom: 45px;
+  }
+  
+  .tm-call-to-action-description {
+    margin-bottom: 55px;
+    font-size: 1.1rem;
+  }
+  
+  p {
+    line-height: 1.7;
+  }
+  
+  .tm-call-to-action-form {
+    display: flex;
+  }
+  
+  .tm-email-input {
+    padding: 15px;
+    margin: 0;
+    width: 355px;
+    margin-right: 20px;
+  }
+  
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }

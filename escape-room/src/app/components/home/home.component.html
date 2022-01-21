@@ -1,0 +1,88 @@
+<body>
+  <div class="container-fluid">
+    <app-navbar></app-navbar>
+
+    <section class="row" id="tmHome">
+      <div class="col-12 tm-home-container">
+        <div class= "text-white tm-home-left">
+          <p class="text-uppercase tm-slogan">Ready to be play?</p>
+          <hr class="tm-home-hr" />
+          <h2 class="tm-home-title">De-Crypt IT: Escaperoom</h2>
+          <p class="tm-home-text">
+            De-Crypt IT is an immersive, fun and most importantly very exciting real live gaming experience, where your task is to solve the mysteries and puzzles in groups of 2-5 people before you run out of time
+          </p>
+          <a routerLink="/contact" class="btn btn-secondary">Contact us</a>
+        </div>
+        <div class="tm-home-right">
+          <img  src="assets/images/decrypt.png" width="600" height="450"/>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Recommended rooms -->
+    <div class="row" id="tmFeatures">
+      <div class="col-lg-4">
+        <div class="tm-bg-black  tm-feature-box">
+          <h3 class="text-center">Breaking Bad</h3>
+  
+          <div class="tm-feature-icon-container">
+            <img  src="assets/images/door.png" width="100px" height="100"/>
+          </div>
+  
+          <p class="text-center">As you’re out wandering deep in the desert wastelands of New Mexico
+            you spy a shady looking RV. It’s covered in bullet holes. Inside you find an array of intricate
+            lab equipment and something is bubbling….</p>
+            <a routerLink="/rooms" class="btn btn-primary2">View</a>
+        </div>
+      </div>
+  
+      <div class="col-lg-4">
+        <div class="tm-bg-black  tm-feature-box">
+  
+          <h3 class="text-center">The 100</h3>
+  
+          <div class="tm-feature-icon-container">
+            <img  src="assets/images/door.png" width="100px" height="100"/>
+          </div>
+  
+          <p class="text-center">97 years after a nuclear apocalypse has devastated the surface of Earth. Three generations have survived in space. The Ark has strict measures, including capital punishment for those over 18 and population control. But now, resources are running out and the Ark is dying.
+            <a routerLink="/rooms" class="btn btn-primary2">View</a>
+          </p>
+        </div>
+      </div>
+  
+      <div class="col-lg-4">
+        <div class="tm-bg-black  tm-feature-box">
+  
+          <h3 class="text-center">Casa de Papel</h3>
+  
+  
+          <div class="tm-feature-icon-container">
+            <img src="assets/images/door.png" width="100px" height="100"/>
+          </div>
+  
+          <p class="text-center">The professor is recruiting his people to carry out a great heist.
+            This is your opportunity to change your life and win 1000 million Euros.
+            Can you find the professor, escape the police and participate in this robbery?
+          <p>
+            <a routerLink="/rooms" class="btn btn-primary2">View</a>
+          </p>
+  
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter -->
+    <section class="row" id="tmCallToAction">
+      <div class="col-12 tm-call-to-action-col">
+        <img src="assets/images/decrypt.png" width="600" height="450"/>
+          <app-newsletter></app-newsletter>   
+      </div>
+    </section>
+    
+    <!-- Page footer -->
+    <footer class="row">
+      <p class="col-12 text-white text-center tm-copyright-text">
+      </p>
+    </footer>
+  </div>
+</body>
